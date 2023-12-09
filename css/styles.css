@@ -90,7 +90,8 @@ body{
 }
 
 .link{
-    text-decoration: none
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -125,11 +126,13 @@ body{
     display: inline-block;
 }
 
-.link-trans-color{
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.link-header-position {
+    position: relative;
+    color: var(--spherical-blue);
 }
 
-.link-header-after::after{
+
+.link-header-position::after{
     content: '';
     position: absolute;
     left: 0;
@@ -153,11 +156,6 @@ body{
     display: inline-block;
     display: flex;
     gap: 40px;    
-}
-
-.link-header-position{
-    position: relative;
-    color: var(--spherical-blue);
 }
 
     /*img-display:block*/
@@ -214,6 +212,12 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--spherical-blue);
 }
 
 .button-index {
@@ -227,15 +231,6 @@ img {
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-top: 48px;
-}
-
-.button:hover,
-.button:focus {
-    background-color: var(--spherical-blue);
-}
-
-.background-trans{
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
     /*section-two-index*/
@@ -339,15 +334,16 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-section-four:hover,
+.link-section-four:focus {
+    background-color: var(--spherical-blue);
 }
 
 .icon-social-four{
     fill: var(--light-grey);
-}
-
-.link-section-four:hover,
-.link-section-four:focus{
-    background-color:var(--spherical-blue);
 }
 
 .acapit-section-four{
@@ -394,12 +390,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    color:var(--gray)
-}
-
-.link-five-trans{
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color:var(--gray);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-section-five:hover,
@@ -639,11 +631,18 @@ img {
 
 .button-modal:hover,
 .button-modal:focus{
+    background-color: var(--spherical-blue);
     border: none;
-    background-color:var(--spherical-blue)
+}
+
+.icon-styl-modal{
+    top:8px;
+    left:8px;
+    fill:var(--dark-grey);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-styl-modal:hover,
 .icon-styl-modal:focus{
-    
+    fill: var(--white);
 }
