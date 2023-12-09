@@ -642,3 +642,8 @@ img {
     border: none;
     background-color:var(--spherical-blue)
 }
+
+.icon-styl-modal:hover,
+.icon-styl-modal:focus{
+    
+}
