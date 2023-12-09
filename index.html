@@ -36,7 +36,7 @@
         <h1 class="heading heading-one">
             Effective Solutions for Your Business
         </h1>
-        <button type="button" class="button button-index background-trans">Order Service</button>
+        <button type="button" class="button button-index background-trans" data-modal-open>Order Service</button>
         </div>
         </section>
         
@@ -341,7 +341,7 @@
         <p class="acapit-footer-social">Social media</p>
         <ul class="list-footer list">
             <li class="icon-item">
-                <a class="link-footer" href="">
+                <a class="link-footer transition-footer-index" href="">
                     <svg width="24" height="24" class="color-svg-footer">
                         <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
@@ -372,6 +372,16 @@
         </div>
         </div>
     </footer>
+
+    <div class="background-modal is-hidden" data-modal>
+        <div class="window-modal">
+            <button type="button" class="button-modal" data-modal-close>
+                <svg width="8" height="8">
+                    <use href="./images/icon-exit.svg#icon-close-icon"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 </html>
