@@ -118,7 +118,7 @@ body{
 .link-header{
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 5;
+    line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--dark-grey);
     padding: 24px 0;
@@ -132,12 +132,11 @@ body{
 }
 
 
-.link-header-studio::after{
+.link-stu-port-after::after{
     content:'';
     position: absolute;
     width: 100%;
     height: 4px;
-    margin-top: 44px;
     left: 0;
     bottom: -1px;
     background-color:var(--spherical-blue);
@@ -422,18 +421,6 @@ img {
     justify-content: center;
     gap: 24px;
     margin-bottom: 72px
-}
-
-.link-header-porfolio::after{
-    content: '';
-        position: absolute;
-        width: 100%;
-        height: 4px;
-        margin-top: 44px;
-        left: 0;
-        bottom: -1px;
-        background-color: var(--spherical-blue);
-        border-radius: 2px;
 }
 
     /*button-portfolio*/
